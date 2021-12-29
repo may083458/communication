@@ -1,0 +1,160 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.contact_service"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.READ_CONTACTS" />
+15-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:3:5-71
+15-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:3:22-69
+16    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+16-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:4:5-73
+16-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:4:22-70
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:5:5-81
+17-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:5:22-78
+18
+19    <queries>
+19-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:6:5-27:15
+20
+21        <!-- If your app opens https URLs -->
+22        <intent>
+22-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:8:9-11:18
+23            <action android:name="android.intent.action.VIEW" />
+23-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:9:13-65
+23-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:9:21-62
+24
+25            <data android:scheme="https" />
+25-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:13-44
+25-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:19-41
+26        </intent>
+27        <!-- If your app makes calls -->
+28        <intent>
+28-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:13:9-16:18
+29            <action android:name="android.intent.action.DIAL" />
+29-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:14:13-65
+29-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:14:21-62
+30
+31            <data android:scheme="tel" />
+31-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:13-44
+31-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:19-41
+32        </intent>
+33        <!-- If your sends SMS messages -->
+34        <intent>
+34-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:18:9-21:18
+35            <action android:name="android.intent.action.SENDTO" />
+35-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:19:13-67
+35-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:19:21-64
+36
+37            <data android:scheme="smsto" />
+37-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:13-44
+37-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:19-41
+38        </intent>
+39        <!-- If your app sends emails -->
+40        <intent>
+40-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:23:9-26:18
+41            <action android:name="android.intent.action.SEND" />
+41-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:24:13-65
+41-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:24:21-62
+42
+43            <data android:mimeType="*/*" />
+43-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:13-44
+44        </intent>
+45        <intent>
+45-->[:contacts_service] C:\Users\Findixmm\StudioProjects\contact_service_app\build\contacts_service\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:18
+46            <action android:name="android.accounts.AccountAuthenticator" />
+46-->[:contacts_service] C:\Users\Findixmm\StudioProjects\contact_service_app\build\contacts_service\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-76
+46-->[:contacts_service] C:\Users\Findixmm\StudioProjects\contact_service_app\build\contacts_service\intermediates\library_manifest\debug\AndroidManifest.xml:13:21-73
+47        </intent> <!-- Allows the app to load an icon corresponding to the custom MIME type. -->
+48        <intent>
+48-->[:contacts_service] C:\Users\Findixmm\StudioProjects\contact_service_app\build\contacts_service\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-23:18
+49            <action android:name="android.intent.action.VIEW" />
+49-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:9:13-65
+49-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:9:21-62
+50
+51            <data
+51-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:13-44
+52                android:host="com.android.contacts"
+53                android:mimeType="vnd.android.cursor.item/*"
+54                android:scheme="content" />
+54-->C:\Users\Findixmm\StudioProjects\contact_service_app\android\app\src\main\AndroidManifest.xml:10:19-41
+55        </intent>
+56    </queries>
+57
+58    <uses-permission android:name="android.permission.READ_SMS" />
+58-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+58-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-64
+59    <uses-permission android:name="android.permission.SEND_SMS" />
+59-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-67
+59-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-64
+60    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+60-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-70
+60-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-67
+61    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+61-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-75
+61-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-72
+62    <uses-permission android:name="android.permission.READ_PROFILE" />
+62-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-71
+62-->[:sms_advanced] C:\Users\Findixmm\StudioProjects\contact_service_app\build\sms_advanced\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-68
+63
+64    <application
+65        android:name="android.app.Application"
+66        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+66-->[androidx.core:core:1.6.0] C:\Users\Findixmm\.gradle\caches\transforms-2\files-2.1\67ff0aaf930f65024e6c37d99bc9e852\core-1.6.0\AndroidManifest.xml:24:18-86
+67        android:debuggable="true"
+68        android:icon="@mipmap/ic_launcher"
+69        android:label="contact_service" >
+70        <activity
+71            android:name="com.example.contact_service.MainActivity"
+72            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+73            android:exported="true"
+74            android:hardwareAccelerated="true"
+75            android:launchMode="singleTop"
+76            android:theme="@style/LaunchTheme"
+77            android:windowSoftInputMode="adjustResize" >
+78
+79            <!--
+80                 Specifies an Android theme to apply to this Activity as soon as
+81                 the Android process has started. This theme is visible to the user
+82                 while the Flutter UI initializes. After that, this theme continues
+83                 to determine the Window background behind the Flutter UI.
+84            -->
+85            <meta-data
+86                android:name="io.flutter.embedding.android.NormalTheme"
+87                android:resource="@style/NormalTheme" />
+88
+89            <intent-filter>
+90                <action android:name="android.intent.action.MAIN" />
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+93            </intent-filter>
+94        </activity>
+95        <!--
+96             Don't delete the meta-data below.
+97             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+98        -->
+99        <meta-data
+100            android:name="flutterEmbedding"
+101            android:value="2" />
+102
+103        <activity
+103-->[:url_launcher_android] C:\Users\Findixmm\StudioProjects\contact_service_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+104            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+104-->[:url_launcher_android] C:\Users\Findixmm\StudioProjects\contact_service_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+105            android:exported="false"
+105-->[:url_launcher_android] C:\Users\Findixmm\StudioProjects\contact_service_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+106            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+106-->[:url_launcher_android] C:\Users\Findixmm\StudioProjects\contact_service_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+107    </application>
+108
+109</manifest>

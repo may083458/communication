@@ -1,0 +1,2 @@
+com/elyudde/sms_advanced/BuildConfig.java
+ com.elyudde.sms_advanced.BuildConfig
